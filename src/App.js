@@ -1,23 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Logo from './component/logo/logo';
+import Link from './component/link/link';
+import Button from './component/button/button';
 function App() {
+  const arr=["Services","Projects","About"];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div className="container">
+       <Logo/>
+        <div className='link'>
+          {
+            arr.map(name=>{
+              return <Link key={name} name={name}/>
+
+            })
+          }
+           
+        </div>
+        
+       <Button/>
+
+
+
+     </div>
     </div>
   );
 }

@@ -35,4 +35,24 @@
   to {
     transform: rotate(360deg);
   }
+  
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  border: 0px solid red;
+  border-radius: 30px;
+  height: 70px;
+  background-color: #3c9896;
+
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  align-items: center;
+}
+.link{
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
 }

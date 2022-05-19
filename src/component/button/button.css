@@ -1,0 +1,14 @@
+input{
+    background-color: blue;
+    height: 40px;
+    color: whitesmoke;
+    border-radius: 30px;
+    border: none;
+    width: 130%;
+    font-size: 20px;
+}
+input:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+    font-size: 22px;
+}
